@@ -16,21 +16,21 @@ module.exports = {
         tree1: "url(.'./assets/img/desktop/tree1)",
         tree2: "url(.'./assets/img/desktop/tree)2",
         tree3: "url(.'./assets/img/desktop/tree)3",
- },
-        // backgroundColor: (theme) => ({
-        //   ...theme("colors"),
-        //   primary: "#CC2D4A",
-        //   secondary: "#8FA206",
-        //   terciary: "#61AEC9",
-        // }),
-        // textColor: {
-        //   primary: "#CC2D4A",
-        //   secondary: "#8FA206",
-        //   terciary: "#61AEC9",
-        // },
-        // fontFamily: {
-        //   Montserrat: ["Montserrat", "sans-serif"],
-     // },
+      },
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+        first: "#CC2D4A",
+        second: "#8FA206",
+        third: "#61AEC9",
+      }),
+      textColor: {
+        first: "#CC2D4A",
+        second: "#8FA206",
+        third: "#61AEC9",
+      },
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+      },
     },
   },
   plugins: [
