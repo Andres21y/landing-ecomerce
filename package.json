@@ -1,0 +1,19 @@
+{
+  "name": "landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tw:build": "tailwind -i ./src/css/input.css -o ./dist/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "andres dario cordoba",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.2"
+  }
+}
