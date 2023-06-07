@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply py-2 px-4 text-white font-semibold rounded-lg shadow-md ;
+    }
+}
+
+@layer components {
+    .card {
+        @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition hover:-translate-y-4 hover:shadow-xl ;
+    }
+
+    .card>div:first-child {
+        @apply w-full h-3/5 rounded-t-lg  bg-orange-500 bg-cover;
+    }
+
+    .card>div:nth-child(2) {
+        @apply w-full h-2/5 bg-second dark:bg-slate-500 rounded-b-lg p-1 px-4 py-2;
+    }
+
+    .card>div:nth-child(2)>p:first-child {
+        @apply text-white font-bold text-lg px-4 pt-2;
+    }
+
+    .card>div:nth-child(2)>p:nth-child(2) {
+        @apply text-white text-base px-4 ;
+    }
+
+}
+
+
+.cardTitle{
+    @apply text-3xl pt-8 pb-3 font-semibold text-white;
+}

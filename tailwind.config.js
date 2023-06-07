@@ -3,19 +3,21 @@ const { url } = require('inspector');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
+  darkMode: 'class',
   theme: {
     extend: {
       backgroundImage: {
-        flower: "url(.'./assets/img/desktop/flower)",
-        lake: "url(.'./assets/img/desktop/lake)",
-        logCabin: "url(.'./assets/img/desktop/logCabin)",
-        mountains: "url(.'./assets/img/desktop/mountains)",
-        mountainsG: "url(.'./assets/img/desktop/mountainsG)",
-        nature: "url(.'./assets/img/desktop/nature)",
-        tree: "url(.'./assets/img/desktop/tree)",
-        tree1: "url(.'./assets/img/desktop/tree1)",
-        tree2: "url(.'./assets/img/desktop/tree)2",
-        tree3: "url(.'./assets/img/desktop/tree)3",
+        'lake': "url('/assets/img/desktop/lake.jpg')",
+        'flowers': "url('/assets/img/desktop/flowers.jpg')",
+        'logCabin': "url('/assets/img/desktop/logCabin.jpg')",
+        'mountains': "url('/assets/img/desktop/mountains.jpg')",
+        'mountainsG': "url('/assets/img/desktop/mountainsG.jpg')",
+        'nature': "url('/assets/img/desktop/nature.jpg')",
+        'tree': "url('/assets/img/desktop/tree.jpg')",
+        'tree1': "url('/assets/img/desktop/treeg1.jpg')",
+        'tree2': "url('/assets/img/desktop/treeg2.jpg')",
+        'tree3': "url('/assets/img/desktop/treeg3.jpg')",
+        'bg-l': "url('/assets/img/mobile/bg-l.jpg')",
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
@@ -37,6 +39,7 @@ module.exports = {
     require('@tailwindcss/forms'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
+    require('tailwind-scrollbar-hide')
   ],
 }
 
